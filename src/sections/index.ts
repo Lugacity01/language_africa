@@ -1,0 +1,14 @@
+export { Hero } from './Hero/Hero';
+export { WhoWeAre } from './WhoWeAre/WhoWeAre';
+export { WhyWeExist } from './WhyWeExist/WhyWeExist';
+export { StrategicPillars } from './StrategicPillars/StrategicPillars';
+export { FeaturedProjects } from './FeaturedProjects/FeaturedProjects';
+export { CommunityInvolvement } from './CommunityInvolvement/CommunityInvolvement';
+export { Partnerships } from './Partnerships/Partnerships';
+export { Donate } from './Donate/Donate';
+export { VisionMission } from './VisionMission/VisionMission';
+export { CoreValues } from './CoreValues/CoreValues';
+export { OurServices } from './OurServices/OurServices';
+export { OurTeam } from './OurTeam/OurTeam';
+export { Contact } from './Contact/Contact';
+export { ClosingStatement } from './ClosingStatement/ClosingStatement';
