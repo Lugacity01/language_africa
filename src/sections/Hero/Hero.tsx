@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[85vh] md:min-h-[95vh] flex items-center justify-center md:justify-start overflow-hidden bg-primary pt-32 md:pt-40 py-16 md:py-24">
+    <section className="relative min-h-[85vh] md:min-h-[95vh] flex items-center justify-center md:justify-start overflow-hidden bg-primary pt-8 md:pt-40 py-16 md:py-24">
 
       {/* Animated Communication Waves Background */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-[0.07] pointer-events-none">
