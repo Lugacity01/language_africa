@@ -18,10 +18,10 @@ const navLinks = [
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
-  
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
+
   // Determine if text should be dark. It is dark if scrolled, OR if we are on a light page (not home).
   const isDarkText = isScrolled || !isHomePage;
 
@@ -50,11 +50,15 @@ export const Navbar: React.FC = () => {
       >
 
         {/* Logo */}
-        <a href="/" className={cn(
-          "text-xl md:text-2xl font-bold tracking-tight z-50 relative transition-colors duration-300",
-          isDarkText ? "text-primary" : "text-white"
-        )}>
-          LanguageAccess<span className={isDarkText ? "text-secondary" : "text-accent"}>Africa.</span>
+        <a href="/" className="z-50 relative flex items-center">
+          <img
+            src="/LanguageAccess Africa Transparent BG (Light).png"
+            alt="LanguageAccess Africa"
+            className={cn(
+              "h-16 md:h-16 w-auto object-contain transition-all duration-300",
+              isDarkText ? "invert brightness-0" : "" // Converts white to black for the scrolled light background
+            )}
+          />
         </a>
 
         {/* Desktop Nav */}

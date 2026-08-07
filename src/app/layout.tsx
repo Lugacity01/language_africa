@@ -15,6 +15,24 @@ export const metadata: Metadata = {
     description: company.subheadline,
     type: 'website',
     locale: 'en_NG',
+    images: [
+      {
+        url: '/LanguageAccess Africa Transparent BG (Light).png',
+        width: 1200,
+        height: 630,
+        alt: 'LanguageAccess Africa Logo',
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: company.name,
+    description: company.subheadline,
+    images: ['/LanguageAccess Africa Transparent BG (Light).png'],
+  },
+  icons: {
+    icon: '/LanguageAccess Africa Transparent BG (Light).png',
+    apple: '/LanguageAccess Africa Transparent BG (Light).png',
   }
 };
 
