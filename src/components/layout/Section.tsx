@@ -2,9 +2,9 @@
 
 import React, { useRef } from 'react';
 import { cn } from '@/utils/cn';
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, HTMLMotionProps } from 'framer-motion';
 
-interface SectionProps extends React.HTMLAttributes<HTMLElement> {
+interface SectionProps extends HTMLMotionProps<"section"> {
   children: React.ReactNode;
 }
 

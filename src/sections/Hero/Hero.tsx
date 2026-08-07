@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
 import { RevealOnScroll } from '@/components/motion/RevealOnScroll';
@@ -11,7 +11,7 @@ import { Globe, Users, Handshake } from 'lucide-react';
 export const Hero: React.FC = () => {
   const words = company.headline.split(' ');
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
@@ -19,10 +19,10 @@ export const Hero: React.FC = () => {
     },
   };
 
-  const child = {
+  const child: Variants = {
     hidden: { y: 0 },
     visible: {
-      y: [-5, 5, -5],
+      y: [-5, 5, -5] as any,
       transition: {
         duration: 2,
         repeat: Infinity,
