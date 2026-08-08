@@ -31,7 +31,7 @@ export const OurServices: React.FC = () => {
               </span>
             </RevealOnScroll>
             <RevealOnScroll direction="up" delay={0.1}>
-              <h2 className="text-[clamp(2.25rem,4vw,3rem)] font-medium text-primary leading-[1.1]">
+              <h2 className="text-[clamp(1.5rem,7vw,3rem)] font-medium text-primary leading-[1.1]">
                 Professional solutions for a multilingual world.
               </h2>
             </RevealOnScroll>
@@ -78,7 +78,7 @@ export const OurServices: React.FC = () => {
                     </div>
                     
                     <span className={cn(
-                      "text-5xl md:text-7xl font-bold opacity-10 tracking-tighter",
+                      "text-4xl md:text-7xl font-bold opacity-10 tracking-tighter",
                       isDark ? "text-white" : "text-primary"
                     )}>
                       0{index + 1}
@@ -87,12 +87,12 @@ export const OurServices: React.FC = () => {
                   
                   {/* Bottom section: Content */}
                   <div className="max-w-3xl mt-auto">
-                    <h3 className="text-3xl md:text-5xl font-bold mb-6 leading-[1.1] tracking-tight">
+                    <h3 className="text-2xl md:text-5xl font-bold mb-4 md:mb-6 leading-[1.1] tracking-tight">
                       {service.title}
                     </h3>
                     
                     <p className={cn(
-                      "text-lg md:text-xl leading-relaxed font-medium",
+                      "text-base md:text-xl leading-relaxed font-medium",
                       isDark ? "text-white/80" : "text-primary/70"
                     )}>
                       {service.description}

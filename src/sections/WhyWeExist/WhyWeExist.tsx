@@ -20,7 +20,7 @@ export const WhyWeExist: React.FC = () => {
               <span className="inline-block text-sm font-semibold uppercase tracking-wider text-secondary mb-4">
                 {company.whyWeExist.title}
               </span>
-              <h2 className="text-[clamp(2.5rem,4vw,4rem)] font-bold text-primary leading-[1.1] tracking-tighter">
+              <h2 className="text-[clamp(1.5rem,6vw,4rem)] font-bold text-primary leading-[1.1] tracking-tighter">
                 The <br/>
                 Communication <br/>
                 Challenge in <br/>
@@ -34,7 +34,7 @@ export const WhyWeExist: React.FC = () => {
             <span className="inline-block text-sm font-semibold uppercase tracking-wider text-secondary mb-4">
               {company.whyWeExist.title}
             </span>
-            <h2 className="text-[clamp(2.5rem,8vw,3rem)] font-bold text-primary leading-[1.1] tracking-tighter">
+            <h2 className="text-[clamp(1.5rem,9vw,3rem)] font-bold text-primary leading-[1.1] tracking-tighter">
               The Communication Challenge in <span className="text-accent">Africa.</span>
             </h2>
           </div>
@@ -53,12 +53,12 @@ export const WhyWeExist: React.FC = () => {
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
                 {/* The large dramatic number watermark */}
-                <div className="absolute -top-12 md:-top-20 -left-6 md:-left-12 text-[8rem] md:text-[12rem] font-bold text-primary/5 leading-none select-none pointer-events-none z-0">
+                <div className="absolute -top-8 md:-top-20 -left-4 md:-left-12 text-[6rem] md:text-[12rem] font-bold text-primary/5 leading-none select-none pointer-events-none z-0">
                   0{index + 1}
                 </div>
                 
                 {/* The Paragraph Text */}
-                <p className="relative z-10 text-[clamp(1.125rem,1.5vw,1.5rem)] leading-[1.6] text-primary font-medium tracking-wide text-justify">
+                <p className="relative z-10 text-[clamp(1rem,1.5vw,1.5rem)] leading-[1.6] text-primary font-medium tracking-wide text-justify">
                   {paragraph}
                 </p>
               </motion.div>

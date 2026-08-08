@@ -51,11 +51,21 @@ export const Navbar: React.FC = () => {
 
         {/* Logo */}
         <a href="/" className="z-50 relative flex items-center">
+          {/* Mobile Logo (fav.png) */}
+          <img
+            src="/fav.png"
+            alt="LanguageAccess Africa Icon"
+            className={cn(
+              "md:hidden h-10 w-auto object-contain transition-all duration-300",
+              isDarkText ? "invert brightness-0" : ""
+            )}
+          />
+          {/* Desktop Logo */}
           <img
             src="/LanguageAccess Africa Transparent BG (Light).png"
             alt="LanguageAccess Africa"
             className={cn(
-              "h-16 md:h-16 w-auto object-contain transition-all duration-300",
+              "hidden md:block h-16 w-auto object-contain transition-all duration-300",
               isDarkText ? "invert brightness-0" : "" // Converts white to black for the scrolled light background
             )}
           />

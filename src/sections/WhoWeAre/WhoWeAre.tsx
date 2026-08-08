@@ -25,7 +25,7 @@ export const WhoWeAre: React.FC = () => {
           <div className="w-full text-center mb-16 md:mb-24 px-4">
             <RevealOnScroll direction="up" delay={0.1}>
               <motion.h2 
-                className="text-[clamp(2.5rem,6vw,6rem)] font-bold leading-[1.05] tracking-tighter"
+                className="text-[clamp(1.5rem,7.5vw,5.5rem)] font-bold leading-[1.1] tracking-tight"
                 style={{
                   backgroundImage: 'linear-gradient(90deg, #ffffff, var(--color-accent), var(--color-secondary), #ffffff, var(--color-accent))',
                   backgroundSize: '400% 100%',
@@ -54,7 +54,7 @@ export const WhoWeAre: React.FC = () => {
               
               {/* Card 1: Wide */}
               <RevealOnScroll direction="up" delay={0.2} className="md:col-span-2">
-                <div className="bg-white/5 border border-white/10 rounded-[var(--radius-xl)] p-8 md:p-10 hover:bg-white/10 transition-colors duration-300">
+                <div className="bg-white/5 border border-white/10 rounded-[var(--radius-xl)] p-6 md:p-10 hover:bg-white/10 transition-colors duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-white">
                       <Globe size={20} />
@@ -69,7 +69,7 @@ export const WhoWeAre: React.FC = () => {
 
               {/* Card 2: Square */}
               <RevealOnScroll direction="up" delay={0.3} className="md:col-span-1">
-                <div className="bg-white/5 border border-white/10 rounded-[var(--radius-xl)] p-8 md:p-10 h-full hover:bg-white/10 transition-colors duration-300">
+                <div className="bg-white/5 border border-white/10 rounded-[var(--radius-xl)] p-6 md:p-10 h-full hover:bg-white/10 transition-colors duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-white">
                       <Users size={20} />
@@ -84,7 +84,7 @@ export const WhoWeAre: React.FC = () => {
 
               {/* Card 3: Square */}
               <RevealOnScroll direction="up" delay={0.4} className="md:col-span-1">
-                <div className="bg-white/5 border border-white/10 rounded-[var(--radius-xl)] p-8 md:p-10 h-full hover:bg-white/10 transition-colors duration-300">
+                <div className="bg-white/5 border border-white/10 rounded-[var(--radius-xl)] p-6 md:p-10 h-full hover:bg-white/10 transition-colors duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-white">
                       <Shield size={20} />
@@ -99,7 +99,7 @@ export const WhoWeAre: React.FC = () => {
 
               {/* Card 4: Wide */}
               <RevealOnScroll direction="up" delay={0.5} className="md:col-span-2">
-                <div className="bg-white/5 border border-white/10 rounded-[var(--radius-xl)] p-8 md:p-10 hover:bg-white/10 transition-colors duration-300">
+                <div className="bg-white/5 border border-white/10 rounded-[var(--radius-xl)] p-6 md:p-10 hover:bg-white/10 transition-colors duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-white">
                       <Cpu size={20} />

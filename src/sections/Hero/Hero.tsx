@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[85vh] md:min-h-[95vh] flex items-center justify-center md:justify-start overflow-hidden bg-primary pt-8 md:pt-40 py-16 md:py-24">
+    <section className="relative min-h-[85vh] md:min-h-[95vh] flex items-center justify-center md:justify-start overflow-hidden bg-primary pt-16 md:pt-40 py-16 md:py-24">
 
       {/* Animated Communication Waves Background */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-[0.07] pointer-events-none">
@@ -98,7 +98,7 @@ export const Hero: React.FC = () => {
         <div className="max-w-[850px] mx-auto md:mx-0 flex flex-col items-center md:items-start">
           <div className="flex flex-wrap justify-center md:justify-start items-center mb-6 relative">
             <motion.h1
-              className="text-[clamp(2.5rem,6.5vw,5rem)] font-semibold leading-[1.05] tracking-[-0.03em] text-white text-center md:text-left"
+              className="text-[clamp(1.5rem,8vw,5rem)] font-semibold leading-[1.05] tracking-[-0.03em] text-white text-center md:text-left"
               variants={container}
               initial="hidden"
               animate="visible"
