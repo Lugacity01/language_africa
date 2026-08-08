@@ -22,8 +22,8 @@ export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Determine if text should be dark. It is dark if scrolled, OR if we are on a light page (not home).
-  const isDarkText = isScrolled || !isHomePage;
+  // Determine if text should be dark. It is dark if scrolled, OR if we are on a light page (not home), OR if mobile menu is open.
+  const isDarkText = isScrolled || !isHomePage || isMobileMenuOpen;
 
   useEffect(() => {
     const handleScroll = () => {
