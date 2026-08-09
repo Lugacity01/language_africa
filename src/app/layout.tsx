@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     images: ['/LanguageAccess Africa Transparent BG (Light).png'],
   },
   icons: {
-    icon: '/LanguageAccess Africa Transparent BG (Light).png',
-    apple: '/LanguageAccess Africa Transparent BG (Light).png',
+    icon: '/aura-favicon.svg',
+    apple: '/aura-favicon.svg',
   }
 };
 

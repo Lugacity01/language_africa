@@ -53,7 +53,7 @@ export const Navbar: React.FC = () => {
         <a href="/" className="z-50 relative flex items-center">
           {/* Mobile Logo (fav.png) */}
           <img
-            src="/fav.png"
+            src="/aura-favicon.svg"
             alt="LanguageAccess Africa Icon"
             className={cn(
               "md:hidden h-10 w-auto object-contain transition-all duration-300",
