@@ -22,8 +22,14 @@ export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Determine if text should be dark. It is dark if scrolled, OR if we are on a light page (not home), OR if mobile menu is open.
-  const isDarkText = isScrolled || !isHomePage || isMobileMenuOpen;
+  let isDarkText = false;
+  if (isMobileMenuOpen) {
+    isDarkText = true;
+  } else if (isScrolled) {
+    isDarkText = false;
+  } else {
+    isDarkText = !isHomePage;
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,30 +50,17 @@ export const Navbar: React.FC = () => {
         className={cn(
           'w-full max-w-[1100px] flex items-center justify-between transition-all duration-500 ease-out',
           isScrolled
-            ? 'bg-white/70 backdrop-blur-xl border border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-full px-6 py-3 glass-border'
+            ? 'bg-primary/90 backdrop-blur-xl border border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-full px-6 py-3 glass-border'
             : 'bg-transparent py-2'
         )}
       >
 
         {/* Logo */}
         <a href="/" className="z-50 relative flex items-center">
-          {/* Mobile Logo (fav.png) */}
-          <img
-            src="/aura-favicon.svg"
-            alt="LanguageAccess Africa Icon"
-            className={cn(
-              "md:hidden h-10 w-auto object-contain transition-all duration-300",
-              isDarkText ? "invert brightness-0" : ""
-            )}
-          />
-          {/* Desktop Logo */}
           <img
             src="/LanguageAccess Africa Transparent BG (Light).png"
             alt="LanguageAccess Africa"
-            className={cn(
-              "hidden md:block h-16 w-auto object-contain transition-all duration-300",
-              isDarkText ? "invert brightness-0" : "" // Converts white to black for the scrolled light background
-            )}
+            className="h-10 md:h-14 w-auto object-contain transition-all duration-300"
           />
         </a>
 

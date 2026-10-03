@@ -5,19 +5,20 @@ import { company } from '@/data/company';
 import { ArrowUpRight } from 'lucide-react';
 import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
+import { socialMedia } from '@/data/team';
+
 const socialLinks = [
-  { name: 'LinkedIn', icon: FaLinkedin, href: '#' },
-  { name: 'X (Twitter)', icon: FaTwitter, href: '#' },
-  { name: 'Facebook', icon: FaFacebook, href: '#' },
-  { name: 'Instagram', icon: FaInstagram, href: '#' },
-  { name: 'YouTube', icon: FaYoutube, href: '#' },
+  { name: 'LinkedIn', icon: FaLinkedin, href: socialMedia.linkedin },
+  { name: 'X (Twitter)', icon: FaTwitter, href: socialMedia.x },
+  { name: 'Facebook', icon: FaFacebook, href: socialMedia.facebook },
+  { name: 'Instagram', icon: FaInstagram, href: socialMedia.instagram },
 ];
 
 export const ClosingStatement: React.FC = () => {
   return (
     <footer className="bg-primary text-white pt-24 pb-8 overflow-hidden relative">
       <Container className="relative z-10">
-        
+
         {/* Main CTA Block */}
         <div className="border-b border-white/10 pb-20 mb-16">
           <div className="max-w-[800px]">
@@ -36,7 +37,7 @@ export const ClosingStatement: React.FC = () => {
 
         {/* Footer Bottom Links */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
-          
+
           <RevealOnScroll direction="up" delay={0.2}>
             <div>
               <span className="block text-sm font-semibold uppercase tracking-wider text-accent mb-6">
@@ -46,14 +47,15 @@ export const ClosingStatement: React.FC = () => {
                 {socialLinks.map((social, index) => {
                   const Icon = social.icon;
                   return (
-                    <a 
-                      key={index} 
-                      href={social.href} 
-                      className="group flex items-center gap-2 px-5 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+                    <a
+                      key={index}
+                      href={social.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={social.name}
+                      className="group flex items-center justify-center w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300"
                     >
-                      <Icon size={18} className="text-white/80 group-hover:text-white" />
-                      <span className="text-sm font-medium">{social.name}</span>
-                      <ArrowUpRight size={14} className="text-white/40 group-hover:text-white/80 transition-colors ml-1" />
+                      <Icon size={20} className="text-white/80 group-hover:text-white" />
                     </a>
                   );
                 })}
@@ -71,7 +73,14 @@ export const ClosingStatement: React.FC = () => {
               </p>
             </div>
           </RevealOnScroll>
-          
+
+        </div>
+
+        {/* Developer Credit - Centered & Faded Only */}
+        <div className="w-full text-center mt-6 opacity-10 hover:opacity-100 transition-opacity duration-500">
+          <p className="text-white text-xs tracking-wide">
+            Developed by <a href="https://www.linkedin.com/company/lugacity-optimal-solutions/" target="_blank" rel="noreferrer" className="font-medium underline decoration-white/40 underline-offset-2">Lugacity Optimal Solutions</a>
+          </p>
         </div>
       </Container>
     </footer>
