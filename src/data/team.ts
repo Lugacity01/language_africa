@@ -156,23 +156,18 @@ export const team: Record<string, TeamMember[]> = {
     p.akorede,
   ],
   languageServices: [
-    p.abdullahi,
     p.saheed,
-    p.muhammad,
     p.taslim,
     p.arabo,
   ],
   aiAndLanguageTechnology: [
     p.yinka,
     p.uthman,
-    p.idris,
   ],
   knowledgeTrainingCommunications: [
     p.bethel,
     p.jamiah,
-    p.maryam,
     p.kemi,
-    p.taslim,
     p.muhammad,
   ],
   advisors: [
