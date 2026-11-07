@@ -57,7 +57,7 @@ export const company = {
       '19, Olorunsogo Street, Behind NNPC Filling Station, Janta Area, Ifon-Osun, Osun State.',
     ],
     phones: ['+2349032706492', '+2349020809949'],
-    email: 'contact@languageaccessafrica.org',
+    email: ['info@languageafrica.org'],
   },
   closingStatement: {
     title: "Let's Build Africa's Multilingual Future Together",

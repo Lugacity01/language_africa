@@ -40,9 +40,13 @@ export const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">Email</h4>
-                    <a href={`mailto:${company.contact.email}`} className="text-lg text-primary/80 hover:text-secondary transition-colors">
-                      {company.contact.email}
-                    </a>
+                    <div className="flex flex-col gap-1">
+                      {(Array.isArray(company.contact.email) ? company.contact.email : [company.contact.email]).map((email, i) => (
+                        <a key={i} href={`mailto:${email}`} className="text-lg text-primary/80 hover:text-secondary transition-colors">
+                          {email}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </RevealOnScroll>

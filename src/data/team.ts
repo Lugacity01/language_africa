@@ -121,7 +121,10 @@ const p: Record<string, TeamMember> = {
     name: "Uthman Zakariya",
     role: "LLM Engineer",
     bio: "Uthman is an LLM Engineer at LanguageAccess Africa, where he advances language and AI development to build linguistic bridges across communities. With nearly a decade of experience in technology, he creates intelligent systems that widen access, strengthen communication, and empower people to participate more fully in an increasingly connected world.",
-    image: "/LanguageAccess Africa Profile Pictures/uthman.jpeg"
+    image: "/LanguageAccess Africa Profile Pictures/uthman.jpeg",
+    socials: {
+      facebook: "https://www.facebook.com/share/198Cz8nudv/"
+    }
   },
   drBello: {
     name: "Dr Bello Shehu Abdullahi",
